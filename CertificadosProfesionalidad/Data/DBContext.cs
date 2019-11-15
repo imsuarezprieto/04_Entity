@@ -13,6 +13,7 @@ namespace CertificadosProfesionalidad.Data
 		public virtual DbSet<AreaProfesional>		AreasProfesionales		{ get; set; }
 
 		public DBContext() : base( "CertificadosProfesionalDatabase" ) {}
+
 		protected override void OnModelCreating( DbModelBuilder modelBuilder ) { 
 			modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 		}
