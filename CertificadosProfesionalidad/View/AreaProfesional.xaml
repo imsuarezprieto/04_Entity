@@ -6,6 +6,6 @@
              xmlns:local="clr-namespace:CertificadosProfesionalidad.View"
              mc:Ignorable="d" >
     <Grid>
-        <DataGrid ItemsSource="{Binding Path= AreaProfesional}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <DataGrid ItemsSource="{Binding AreasProfesionales, Mode=TwoWay}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
     </Grid>
 </UserControl>

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.CompilerServices;
+
 
 namespace CertificadosProfesionalidad.Model
 {
-    public class AreaProfesional : INotifyPropertyChanged
+	public class AreaProfesional : INotifyPropertyChanged
     {
         private String codigo;
         private String denominacion;
@@ -45,7 +45,7 @@ namespace CertificadosProfesionalidad.Model
             }
         }
 
-        public ISet<FamiliaProfesional> FamiliasProfesionales { get; private set; } = new HashSet<FamiliaProfesional>();
+        public ISet<FamiliaProfesional> FamiliasProfesionales { get; set; } = new HashSet<FamiliaProfesional>();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
